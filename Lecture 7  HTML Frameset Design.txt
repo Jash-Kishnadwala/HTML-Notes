@@ -1,0 +1,126 @@
+### **Lecture 7: HTML Frameset Design**
+
+#### **Introduction to Frameset:**  
+Framesets in HTML are used to divide the browser window into multiple sections where each section can load a separate HTML document. 
+Framesets are helpful when you want to display multiple web pages within one window.
+
+**Note:** The `<frameset>` tag is not supported in HTML5, but it is useful to understand for legacy web projects.
+
+---
+
+#### **Why Use Frameset?**  
+- To display multiple HTML pages simultaneously.  
+- To create navigation menus without reloading the entire page.  
+- To build dashboard-like layouts.  
+
+---
+
+#### **Basic Structure of Frameset:**  
+
+<frameset rows="50%,50%"> 
+    <frame src="page1.html">
+    <frame src="page2.html">
+</frameset>
+
+- **`<frameset>`:** Replaces the `<body>` tag.  
+- **`rows` or `cols`:** Divides the screen horizontally or vertically.  
+- **`<frame>`:** Defines each frame and its source.  
+
+---
+
+#### **Types of Frameset:**  
+
+1. **Column Frameset:**  
+
+<frameset cols="30%,70%">
+    <frame src="left.html">
+    <frame src="right.html">
+</frameset>
+
+- Splits the page vertically into two columns.  
+
+2. **Row Frameset:**  
+
+<frameset rows="20%,80%">
+    <frame src="top.html">
+    <frame src="bottom.html">
+</frameset>
+
+- Splits the page horizontally into two rows.  
+
+3. **Nested Frameset:**  
+
+<frameset rows="20%,*">
+    <frame src="header.html">
+    <frameset cols="50%,50%">
+        <frame src="left.html">
+        <frame src="right.html">
+    </frameset>
+</frameset>
+- Combines rows and columns for a complex layout.  
+
+---
+
+#### **Example: Simple Webpage using Frameset**  
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frameset Example</title>
+</head>
+<frameset rows="20%,80%">
+    <frame src="header.html" name="header">
+    <frameset cols="30%,70%">
+        <frame src="menu.html" name="menu">
+        <frame src="content.html" name="content">
+    </frameset>
+</frameset>
+</html>
+
+- **Header Frame:** Displays the title or logo.  
+- **Menu Frame:** Displays the navigation links.  
+- **Content Frame:** Displays the main content based on menu selection.  
+
+---
+
+#### **Key Points:**  
+1. The `<noframes>` tag is used for browsers that do not support frames.  
+2. Always include a `<noframes>` section for better compatibility:  
+
+   <noframes>
+       Your browser does not support frames.
+   </noframes>
+
+3. Use the `name` attribute in the `<frame>` tag to target specific frames.  
+4. Avoid using framesets in modern web design due to lack of support and SEO issues.  
+
+
+==============================
+
+### **Questions:**
+
+1. **Basic Frameset Design:**  
+   - Create an HTML page using framesets that divides the page into two columns. The left frame should display a list of subjects, and the 
+     right frame should show the subject details when clicked.
+
+2. **Header and Content Frameset:**  
+   - Design an HTML page using framesets to create a header on top (20% height) and content below (80% height). The header should display 
+   a title, and the content should display a webpage.
+
+3. **Multi-Column Layout with Frames:**  
+   - Create a frameset that divides the page into three columns:  
+     - Left column (20%) for navigation links  
+     - Middle column (60%) for content  
+     - Right column (20%) for advertisements  
+
+4. **Combining Rows and Columns:**  
+   - Create a webpage using framesets that has:  
+     - Top frame (20%) for the header  
+     - Bottom frame (80%) divided into two columns: left for navigation and right for content  
+
+5. **Nested Frameset:**  
+   - Design a webpage with a nested frameset:  
+     - Outer frameset: Divides the page into two rows  
+     - Inner frameset (inside the second row): Divides into two columns for content and advertisements  
+
+---

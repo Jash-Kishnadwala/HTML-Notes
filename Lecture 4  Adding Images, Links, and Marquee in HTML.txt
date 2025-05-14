@@ -1,0 +1,174 @@
+# **Lecture 4: Adding Images, Links, and Marquee in HTML**  
+
+
+##  Step 1: Why Use Images, Links & Marquee in Webpages? (5 mins)**  
+** Ask Students:**  
+- Why do we add images to websites?  
+- What are links used for?  
+- Have you seen scrolling text on a webpage?  
+
+### Real-World Examples:**  
+**Images** – Used for product images, banners, profile pictures.  
+**Links** – Used for navigation menus, buttons, social media.  
+**Marquee** – Used for breaking news, announcements, stock market updates.  
+
+---
+
+##  Step 2: Adding Images in HTML (`<img>`) (10 mins)**  
+
+**Definition:**  
+- The `<img>` tag is used to **insert an image** into a webpage.  
+- Images make websites more **attractive and informative**.  
+
+**Basic Syntax:**  
+
+<img src="image.jpg" alt="Description of Image">
+
+**Attributes:**  
+- `src` → Image location (file path or URL).  
+- `alt` → Alternative text (for accessibility and SEO).  
+- `width` & `height` → Set image size.  
+
+**Example:** Adding a Profile Picture   
+
+<h2>My Profile Picture</h2>
+<img src="profile.jpg" alt="My Profile Picture" width="200" height="200">
+
+
+**Example:** Adding an Online Image   
+
+<img src="https://www.example.com/image.jpg" alt="Online Image">
+
+**Ask Students:**  
+- What happens if the image file is missing? (Answer: The `alt` text is displayed.)  
+- How can we make an image responsive? (Answer: Use CSS `width: 100%`.)  
+
+---
+
+## Step 3: Adding Links in HTML (`<a>`) (10 mins)**  
+
+**Definition:**  
+- The `<a>` tag is used to **create hyperlinks**.  
+- Links help users **navigate between pages, download files, or open email applications**.  
+
+**Basic Syntax:**  
+
+<a href="URL">Clickable Text</a>
+
+**Example 1:** **Link to Another Website**  
+
+<a href="https://www.google.com">Visit Google</a>
+
+
+**Example 2:** **Open Link in a New Tab**   
+
+<a href="https://www.wikipedia.org" target="_blank">Open Wikipedia</a>
+
+`target="_blank"` opens the link in a new tab.  
+
+**Example 3:** **Email Link **  
+
+<a href="mailto:someone@example.com">Send Email</a>
+
+
+**Example 4:** **Download a File**  
+
+<a href="document.pdf" download>Download PDF</a>
+
+**Ask Students:**  
+- How can you create a link that scrolls to another section of the same page?  
+(Answer: Use **anchor links** with `id`.)  
+
+**Example 5:** **Jump to a Section on the Same Page**  
+
+<a href="#contact">Go to Contact Section</a>
+
+<h2 id="contact">Contact Us</h2>
+<p>Our email is support@example.com</p>
+
+
+---
+
+##  Step 4: Adding Marquee Text (`<marquee>`) (10 mins)**  
+
+**Definition:**  
+- The `<marquee>` tag creates **scrolling text**.  
+- Used for **news tickers, stock updates, event announcements**.  
+
+ **Basic Syntax:**  
+
+<marquee>Scrolling Text</marquee>
+
+
+**Example 1:** **Basic Marquee**  
+
+<marquee>Breaking News: HTML is easy to learn!</marquee>
+
+
+**Example 2:** **Marquee with Direction **  
+
+<marquee direction="right">Text moving right!</marquee>
+<marquee direction="left">Text moving left!</marquee>
+
+
+**Example 3:** **Marquee with Speed & Behavior**  
+
+<marquee scrollamount="10" behavior="alternate">Fast Moving Text</marquee>
+
+`scrollamount="10"` → Increases speed.  
+`behavior="alternate"` → Makes text bounce back and forth.  
+
+**Ask Students:**  
+- Where have you seen a marquee in real life?  
+- Can you add images inside a marquee? (Answer: Yes, using `<img>`.)  
+
+**Example 4:** **Scrolling Image in a Marquee **  
+
+<marquee>
+    <img src="banner.jpg" width="300">
+</marquee>
+
+
+---
+
+## Step 5: Real-World Applications (5 mins)**  
+
+**Example 1: Website Banner with Image & Link**  
+
+<a href="offers.html">
+    <img src="sale-banner.jpg" alt="Special Sale" width="500">
+</a>
+
+**Example 2: Navigation Menu with Links**  
+
+<ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+**Example 3: News Marquee**  
+
+<marquee direction="left" scrollamount="5">Latest News: New Web Development Course Launched!</marquee>
+
+
+--- 
+
+## Step 6: Recap & Quick Quiz (5 mins)**  
+
+ **Key Takeaways:**  
+1️ `<img>` is used to display images.  
+2️ `<a>` creates links to other pages, emails, and downloads.  
+3️`<marquee>` makes text or images scroll.  
+
+**Quick Quiz:**  
+1. What is the purpose of the `alt` attribute in `<img>`?  
+2. How do you make a link open in a new tab?  
+3. How can you change the scrolling direction in a marquee?  
+4. How do you create an email link?  
+
+**End with a Small Project:**  
+- **Ask students to create a "My Portfolio" webpage**  
+  - **Profile Picture** using `<img>`  
+  - **Social Media Links** using `<a>`  
+  - **Scrolling Announcement** using `<marquee>`  

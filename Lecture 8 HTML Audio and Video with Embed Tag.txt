@@ -1,0 +1,120 @@
+### **Lecture 7: HTML Audio and Video with Embed Tag**
+
+---
+
+#### **Introduction to Multimedia in HTML:**  
+In modern web design, adding audio and video enhances user experience. HTML provides tags to embed audio and video directly into web pages.
+
+---
+
+#### **Why Use Audio and Video Tags?**  
+- To make content more interactive.  
+- To present multimedia content directly on the page.  
+- To avoid external media players and plugins.  
+
+---
+
+### **HTML Audio Tag:**  
+The `<audio>` tag is used to embed sound files in HTML.  
+
+**Syntax:**  
+
+<audio controls>
+    <source src="audiofile.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>
+
+- **controls:** Adds play, pause, and volume options.  
+- **source:** Specifies the audio file and format.  
+- **Alternative Text:** Displayed if the browser does not support audio.  
+
+#### **Common Audio Formats:**  
+- MP3: audio/mpeg  
+- OGG: audio/ogg  
+- WAV: audio/wav  
+
+---
+
+### **HTML Video Tag:**  
+The `<video>` tag is used to embed video files.  
+
+**Syntax:**  
+
+<video width="320" height="240" controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+- **width and height:** Set the video dimensions.  
+- **controls:** Adds play, pause, and volume options.  
+- **Alternative Text:** Shown if the browser does not support the video.  
+
+#### **Common Video Formats:**  
+- MP4: video/mp4  
+- WebM: video/webm  
+- OGG: video/ogg  
+
+---
+
+### **Using the Embed Tag:**  
+The `<embed>` tag can embed audio, video, or other multimedia content.  
+
+**Syntax for Audio:**  
+
+<embed src="song.mp3" width="300" height="50" type="audio/mpeg">
+
+**Syntax for Video:**  
+
+<embed src="movie.mp4" width="400" height="300" type="video/mp4">
+
+- **src:** Specifies the file to embed.  
+- **type:** Specifies the media type.  
+- **width and height:** Set the player size.  
+
+---
+
+### **Practical Example:**  
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio and Video Example</title>
+</head>
+<body>
+
+<h2>Audio Example</h2>
+<audio controls>
+    <source src="music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<h2>Video Example</h2>
+<video width="320" height="240" controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video element.
+</video>
+
+<h2>Using Embed Tag for Video</h2>
+<embed src="sample.mp4" width="320" height="240" type="video/mp4">
+
+<h2>Using Embed Tag for Audio</h2>
+<embed src="audiofile.mp3" width="300" height="50" type="audio/mpeg">
+
+</body>
+</html>
+
+
+---
+
+### **Key Points:**  
+1. Always include controls for better usability.  
+2. Use the correct file format to ensure compatibility.  
+3. The `<embed>` tag is less commonly used and may not be as reliable as the `<audio>` and `<video>` tags.  
+4. Always provide fallback text for unsupported browsers.  
+
+---
+
+### **Practical Exercises for Students:**  
+1. Create a webpage that plays an audio file using both the `<audio>` and `<embed>` tags.  
+2. Design a page that displays a video file using both the `<video>` and `<embed>` tags.  
+3. Combine audio and video on the same page to create a multimedia gallery.  

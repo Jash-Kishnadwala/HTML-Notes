@@ -1,0 +1,117 @@
+### **Lecture 2: HTML Heading Tags & Text Formatting Tags**  
+
+
+###  Step 1: Understanding Heading Tags** (7-10 mins)  
+**Q: What are heading tags in HTML?**  
+- HTML provides **six levels of headings** (`<h1>` to `<h6>`).  
+- **Used for structuring content** on a webpage.  
+- `<h1>` is the **largest and most important**, while `<h6>` is the **smallest**.  
+
+**Example:**  
+
+<h1>Main Title (Most Important)</h1>
+<h2>Section Title</h2>
+<h3>Subsection Title</h3>
+<h4>Smaller Subsection</h4>
+<h5>Even Smaller Heading</h5>
+<h6>Least Important Heading</h6>
+
+**Real-World Analogy:**  
+- Think of a **newspaper**:  
+  - The **main headline** is like `<h1>`.  
+  - **Subheadings** under articles are like `<h2>` and `<h3>`.  
+  - Smaller topics inside a section use `<h4>` to `<h6>`.  
+
+**Ask Students:**  
+- Where have you seen different heading sizes in real life?  
+- What happens if we use `<h3>` instead of `<h1>` for a webpage title?  
+
+---
+
+###  Step 2: Text Formatting Tags** (10-12 mins)  
+**Q: What are text formatting tags?**  
+- HTML allows us to **style and format text** for better readability.  
+- Formatting tags **change the appearance** of text.  
+
+**Common Formatting Tags & Examples**  
+
+| Tag | Description | Example |
+|------|------------|---------|
+| `<b>` | **Bold Text** | `<b>Important</b>` → **Important** |
+| `<i>` | *Italic Text* | `<i>Emphasis</i>` → *Emphasis* |
+| `<u>` | Underlined Text | `<u>Underline</u>` → __Underline__ |
+| `<mark>` | Highlighted Text | `<mark>Highlight</mark>` → ==Highlight== |
+| `<small>` | Small Text | `<small>Smaller Text</small>` → Small Text |
+| `<del>` | Strikethrough | `<del>Deleted</del>` → ~~Deleted~~ |
+| `<ins>` | Inserted Text | `<ins>Inserted</ins>` → Inserted |
+| `<sub>` | Subscript | `H<sub>2</sub>O` → H₂O |
+| `<sup>` | Superscript | `2<sup>nd</sup>` → 2ⁿᵈ |
+| `<pre>` | Preformatted Text | `<pre>Code Example</pre>` |
+| `<code>` | Inline Code | `<code>print("Hello")</code>` → `print("Hello")` |
+
+**Example:** Combining multiple formatting tags  
+
+<p>This is a <b>bold</b>, <i>italic</i>, and <u>underlined</u> sentence.</p>
+<p>Water formula: H<sub>2</sub>O</p>
+<p>Math equation: E = mc<sup>2</sup></p>
+
+**Ask Students:**  
+- What is the difference between `<b>` and `<strong>`?  
+- How would you use `<mark>` in a study notes webpage?  
+
+---
+
+###  Step 3: Real-World Use Cases** (10 mins)  
+**Example 1: Formatting a Blog Post**  
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog</title>
+</head>
+<body>
+    <h1>How to Learn HTML</h1>
+    <h2>Introduction</h2>
+    <p>HTML stands for <b>HyperText Markup Language</b>.</p>
+    
+    <h2>Important Tips</h2>
+    <p><mark>Practice every day</mark> to improve your coding skills.</p>
+
+    <h2>Common HTML Tags</h2>
+    <ul>
+        <li><b>Bold</b> Text</li>
+        <li><i>Italic</i> Text</li>
+        <li>H<sub>2</sub>O (Subscript)</li>
+        <li>E = mc<sup>2</sup> (Superscript)</li>
+    </ul>
+</body>
+</html>
+
+**Example 2: Formatting a Product Description**  
+
+<h1>Smartphone Features</h1>
+<p><b>Brand:</b> Samsung</p>
+<p><b>Screen:</b> 6.5-inch Display</p>
+<p><b>Battery:</b> <mark>5000mAh</mark></p>
+<p><b>Offer Price:</b> <del>$500</del> <ins>$450</ins></p>
+
+**Ask Students:**  
+- How would you format a **resume** using HTML formatting tags?  
+- Can you create a **study guide** webpage using `<mark>`, `<b>`, and `<pre>`?  
+
+---
+
+### Step 4: Recap & Quick Quiz** (5 mins)  
+
+**Key Takeaways:**  
+1️`<h1>` to `<h6>` define heading sizes.  
+2️ Formatting tags help improve text readability.  
+3️ Use `<b>`, `<i>`, `<u>`, `<mark>`, `<sup>`, `<sub>`, and `<code>` to enhance text.  
+4️ Formatting is used in blogs, e-commerce sites, and study materials.  
+
+**Quick Quiz (Ask Students):**  
+1. What is the difference between `<h1>` and `<h6>`?  
+2. How do you highlight text in HTML?  
+3. Which tag is used for superscripts?  
+4. How can you display a **preformatted** block of text?  
+

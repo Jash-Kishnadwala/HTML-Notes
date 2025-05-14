@@ -1,0 +1,107 @@
+### **Lecture 1: Introduction to HTML (Tags, Attributes & Backgrounds)**  
+
+### ** Step 1: Introduction to HTML** (5-7 mins)  
+**Q: What is HTML?**  
+- HTML stands for **HyperText Markup Language**.  
+- It is the **building block** of all websites.  
+- **Analogy:** Think of HTML as the skeleton of a webpage—just like a human body needs bones to stand, a webpage needs HTML for structure.  
+
+**Example:** Show a basic HTML structure  
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Webpage</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is my first webpage using HTML.</p>
+</body>
+</html>
+
+ **Ask Students:**  
+- What do you observe in this code?  
+- Can you guess what `<h1>` and `<p>` are doing?  
+
+---
+
+### Step 2: HTML Tags** (10 mins)  
+**Q: What are Tags?**  
+- HTML **tags** define elements on a webpage.  
+- They always start with `<tag>` and end with `</tag>` (except self-closing tags).  
+
+ **Types of Tags**  
+1️ **Container Tags:** Have an opening and closing tag (`<h1>...</h1>`, `<p>...</p>`)  
+2️ **Empty/Self-Closing Tags:** Don't have a closing tag (`<br>`, `<img>`).  
+
+ **Example:**  
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<img src="image.jpg" alt="Image Example">
+
+**Ask Students:**  
+- What is the difference between `<h1>` and `<p>`?  
+- What happens if we remove the closing tag?  
+
+---
+
+###  Step 3: HTML Attributes** (10 mins)  
+**Q: What are Attributes?**  
+- Attributes provide **extra information** about an HTML element.  
+- They are **always inside the opening tag**.  
+
+**Common Attributes:**  
+1️ `href` → Defines a link  
+2 `src` → Defines an image source  
+3️ `alt` → Provides alternative text for images  
+4️ `style` → Adds inline CSS  
+
+**Example:**  
+
+<a href="https://www.google.com">Visit Google</a>
+<img src="logo.png" alt="Company Logo">
+<p style="color: blue;">This is blue text.</p>
+
+**Ask Students:**  
+- What do you think `href` is doing here?  
+- Why is the image using an `alt` attribute?  
+
+---
+
+### Step 4: Backgrounds in HTML** (10 mins)  
+**Q: How can we change the background color of a webpage?**  
+1️ **Using the `bgcolor` Attribute (Old Method)**  
+
+<body bgcolor="yellow">
+    <h1>Welcome</h1>
+</body>
+
+2️ **Using the `background` Attribute (For Images) (Old Method)**  
+
+<body background="bg.jpg">
+    <h1>Welcome</h1>
+</body>
+
+3️ **Using CSS (Recommended Modern Method)**  
+<body style="background-color: lightblue;">
+    <h1>Hello World</h1>
+</body>
+
+**Ask Students:**  
+- What is the difference between using an image and a color as a background?  
+- Why do you think we prefer the CSS method today?  
+
+---
+
+###  Step 5: Recap & Quick Quiz** (5 mins)  
+ **Key Takeaways:**  
+1️ HTML is the **structure** of a webpage.  
+2️ Tags are used to define elements.  
+3️ Attributes add **extra information** to tags.  
+4️ Backgrounds can be set using **colors or images**.  
+
+**Quick Quiz (Ask Students):**  
+1. What is the difference between a tag and an attribute?  
+2. How do you add a link in HTML?  
+3. What is the correct way to set a background color using CSS?

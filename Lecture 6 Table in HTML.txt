@@ -1,0 +1,118 @@
+Lecture 6 Table in HTML
+### **Product Price List**
+
+#### **Table Structure:**
+1. **Product ID**
+2. **Product Name**
+3. **Category**
+4. **Price**
+5. **Availability**
+
+---
+
+### **HTML Code:**
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Price List</title>
+</head>
+<body>
+
+    <h2>Product Price List</h2>
+
+    <table border="1">
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Smartphone</td>
+            <td>Electronics</td>
+            <td>$299</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Laptop</td>
+            <td>Electronics</td>
+            <td>$899</td>
+            <td>Out of Stock</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Blender</td>
+            <td>Home Appliance</td>
+            <td>$49</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Washing Machine</td>
+            <td>Home Appliance</td>
+            <td>$499</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>Headphones</td>
+            <td>Accessories</td>
+            <td>$29</td>
+            <td>In Stock</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+---
+
+### **Explanation:**
+
+1. **Table Structure:**
+   - `<table>`: Creates the table.
+   - `border="1"`: Adds a basic border around the table and cells.
+   - `<tr>`: Defines a table row.
+   - `<th>`: Defines a table header (bold and centered by default).
+   - `<td>`: Defines a table cell (regular data).
+
+2. **Table Headers:**
+   - The first row contains `<th>` elements for column names.
+
+3. **Table Rows:**
+   - Each row after the header contains product data.
+
+4. **Simple and Clear:**
+   - Uses only basic HTML tags without any CSS.
+
+---
+
+### **Use Case:**
+This simple table can be used on:
+- Product catalog pages
+- Inventory lists
+- Price comparison pages
+==========
+
+
+
+### **Questions:**
+
+1. **Basic Table Creation:**  
+   - Create a table using HTML that displays the following student information: Roll Number, Name, Class, and Marks.
+
+2. **Table with Headers and Data:**  
+   - Design an HTML table that shows the following information for three cities: City Name, State, Population, and Area (in sq. km).  
+
+3. **Adding a Border to a Table:**  
+   - Write an HTML code snippet to create a table with a border that displays the details of three books: Title, Author, Price, and Publication Year.  
+
+4. **Using the `colspan` and `rowspan` Attributes:**  
+   - Create an HTML table where the header spans two columns ("Name" and "Contact") and the first cell spans two rows ("Student ID").  
+
+5. **Simple Table for a Timetable:**  
+   - Create a simple timetable for your school day using HTML. The table should include columns for Time, Subject, and Teacher.  

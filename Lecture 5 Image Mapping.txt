@@ -1,0 +1,79 @@
+**Lecture 5 Image Mapping** in the context of **client-side** and **server-side**:
+
+---
+
+### **Image Mapping:**
+Image mapping is a technique used to create interactive images on a webpage where different 
+parts of the image act as links or perform actions. 
+
+#### **Types of Image Mapping:**
+1. **Client-Side Image Mapping**
+2. **Server-Side Image Mapping**
+
+---
+
+### **1. Client-Side Image Mapping:**
+- Done on the client side (browser).
+- Uses HTML tags like `<map>` and `<area>`.
+- The map is embedded directly within the HTML file.
+- Quick and efficient as the browser handles it without sending a request to the server.
+- The `<map>` element contains the definition, and the `<area>` element specifies the 
+coordinates.
+
+**Example:**
+
+<img src="world-map.jpg" usemap="#worldmap" alt="World Map">
+
+<map name="worldmap">
+    <area shape="rect" coords="34,44,270,350" href="https://www.usa.com" alt="USA">
+    <area shape="circle" coords="300,200,40" href="https://www.india.com" alt="India">
+</map>
+
+---
+
+### **2. Server-Side Image Mapping:**
+- The image map is processed on the server.
+- The click coordinates (x, y) are sent to the server for processing.
+- Requires server-side scripting (like PHP, Python).
+- More complex but useful for dynamic data.
+
+**Example:**
+
+<form action="process_click.php" method="get">
+    <input type="image" src="world-map.jpg" name="map" alt="Map">
+</form>
+---
+
+### **Comparison:**
+
+| Aspect                 | Client-Side                        | Server-Side                              |
+|-----------------------|-------------------------------------|-------------------------------------------|
+| Processing Location   | Browser                              | Server                                    |
+| Speed                 | Fast (no server interaction)         | Slower (depends on server response)        |
+| Complexity            | Simple (HTML only)                   | Complex (requires server-side scripting)   |
+| Use Case              | Static content, predefined links     | Dynamic content, database interaction      |
+| Dependency            | Works offline                        | Requires server connection                 |
+=============
+
+### **Questions:**
+
+1. **Basic Image Mapping:**
+   - Create an HTML page that uses an image map to mark different areas on a map of India 
+   (like states). Clicking on each state should display a message with the state’s name.
+
+2. **Clickable Areas in an Image:**
+   - Write an HTML code to create a world map image where clicking on different continents 
+   (like Asia, Europe, Africa) will redirect the user to specific Wikipedia pages about those 
+   continents.
+
+3. **Shape Attributes in Image Maps:**
+   - Create an HTML image map where clicking on a circular logo displays the company name, a 
+   rectangular area shows the address, and a polygonal area shows the contact number.
+
+4. **Navigation using Image Mapping:**
+   - Create a navigation menu using an image map. Use a single image of a menu bar and map 
+   different buttons (like Home, About Us, Contact) to respective links.
+
+5. **Interactive Campus Map:**
+   - Create a campus map image with clickable regions for the library, cafeteria, and 
+   auditorium. When clicked, it should display information about the respective area.
